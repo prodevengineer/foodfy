@@ -1,0 +1,245 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap";
+
+:root{
+    --color-inv: #FBDFDB;
+    --color-text: #111111;
+    --color-grey: #777777;
+    --color-p: #444444;
+    --color-footer-bg: #999999;
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    /* position: relative; */
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 36.1px auto 30px;
+    width: 940px;
+    height: 26.9px;
+}
+
+header img{
+    height:26.px;
+    width:90.6px;
+    margin-right: 122.4px;
+}
+
+.links-h a{
+    text-decoration: none;
+    font: 700 16px Roboto, sans-serif;
+    line-height:19px;
+    color: var(--color-text);
+    margin-right: 30px;
+}
+.links-h a .about{
+    height:19px;
+    width:42px;
+}
+
+.links-h a .recipes{
+    height:19px;
+    width:62px;
+}
+
+.invitation{
+    background:var(--color-inv);
+    border-radius: 30px;
+    height: 366px;
+    width:940px;
+    margin: 36px auto 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.invitation .inv-info h2{
+    color:var(--color-text);
+    font: bold 32px Roboto, sans-serif;
+    line-height: 38px;
+    margin-bottom: 10px;
+}
+.invitation .inv-info p{
+    font: 400 18px Roboto, sans-serif;
+    opacity: 70%;
+    line-height: 28px;
+}
+
+section{
+    margin: 50px auto 50px;
+    width:940px;
+}
+section h3{
+    columns: var(--color-text);
+    font: bold 24px Roboto, sans-serif;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+section .menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    
+}
+section .menu .recipe img,
+section .menu .recipe .dish{
+    cursor: pointer;
+}
+
+.menu .recipe img{
+    border-radius: 15px;
+    height:140px;
+}
+
+.menu .info .dish{
+    color: var(--color-text);
+    font: 400 18px Roboto,sans-serif;
+    line-height: 21px;
+    margin-top: 20px;
+}
+.menu .info .chef{
+    color: var(--color-grey);
+    font: 400 14px Roboto,sans-serif;
+    line-height: 16px;
+    margin-top: 5px;
+}
+
+footer{
+    background-color: #eeeeee;
+    color: var(--color-footer-bg);
+    font: 400 14px Roboto,sans-serif;
+    line-height: 16px;
+    text-align: center;
+    margin-top: auto;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* ==== about page === */
+
+
+.first_p h2{
+    color: var(--color-text);
+    font: bold 24px Roboto, sans-serif;
+    line-height: 28px;
+    margin-bottom: 20px;
+    
+}
+
+.first_p p{
+    color: var(--color-p);
+    font: 400 18px Roboto, sans-serif;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.start h3, .our-recipes h3{
+    color: var(--color-text);
+    font: bold 20px Roboto, sans-serif;
+    line-height: 24px;
+    margin-top: 10px;
+    /* margin-bottom:20px; */
+}
+
+.start p, .our-recipes p{
+    color: var(--color-p);
+    font: 400 18px Roboto, sans-serif;
+    line-height: 28px;
+    
+}
+
+
+/* ==== MODAL ==== */
+.modal-overlay{
+    background: rgba(0,0,0,0.7);
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background: #FFFFFF;
+    height: 413px;
+    width: 660px;
+    margin:30vh auto;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.modal .close-modal {
+    color:var(--color-footer-bg);
+    cursor: pointer;
+    font: 400 16px Regular, sans-serif;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+    padding:20px;
+    position: absolute;
+    bottom:30px;
+    right: 281px;
+    left: 281px;
+
+}
+/* === MODAL .ACTIVE === */
+
+.modal-overlay.active{
+    opacity:1;
+    visibility: visible; /*para aparecer o close*/
+}
+
+/* === CONTENT SETTINGS WHEN MODAL IS ACTIVE === */
+.modal-content{
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 60px;
+   width: 600px;
+   height: auto;
+   text-align: center;
+    /* float:left;  */
+}
+
+
+.modal-content img {
+    width: 600px;
+    height:200px;
+    border-radius:15px;
+    margin: 30px auto 20px;
+}
+
+.modal-content h4 {
+    font: 400 24px Roboto, sans-serif;
+    color: var(--color-text);
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+
+.modal-content h5 {
+    font: 400 18px Roboto, sans-serif;
+    line-height: 21px;
+    color: var(--color-grey);
+    text-align: center;
+}
