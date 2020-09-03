@@ -1,3 +1,8 @@
+
+<h1 align="center">
+Foodfy
+</h1>
+
 <h1 align="center">
     <img src="https://ik.imagekit.io/nsa4tdplyg/webpage_img_X5qtdDfUe.JPG">
 </h1>
@@ -13,11 +18,11 @@
 
 ---
 ## 💌 About
-This repository is comprised of codes developed during the [Launchbase Bootcamp](https://rocketseat.com.br/launchbase) classes, a [Rocketseat](https://rocketseat.com.br/)'s educational product!
+This repository is comprised of codes developed for a project proposed by [Rocketseat](https://rocketseat.com.br/) during [Launchbase Bootcamp](https://rocketseat.com.br/launchbase).  
 
 ---
 ## 📂 Building Foodfy 
-Start from scratch a website for a food company as way to put into pratice the HTML, CSS and Javascript concepts learned till now from the bootcamp.
+Start from scratch a website for a food company as a way to put into pratice the HTML, CSS and Javascript concepts learned till now from the bootcamp.
 
 
 
